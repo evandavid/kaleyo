@@ -42,27 +42,27 @@ return array(
 			'prefix'   => '',
 		),
 
-		// 'mysql' => array(
-		// 	'driver'    => 'mysql',
-		// 	'host'      => isset($_SERVER['DB1_HOST']) ? $_SERVER['DB1_HOST'] : 'localhost',
-		// 	'database'  => isset($_SERVER['DB1_NAME']) ? $_SERVER['DB1_NAME'] : 'kaleyo',
-		// 	'username'  => isset($_SERVER['DB1_USER']) ? $_SERVER['DB1_USER'] : 'root',
-		// 	'password'  => isset($_SERVER['DB1_PASS']) ? $_SERVER['DB1_PASS'] : 'root',
-		// 	'charset'   => 'utf8',
-		// 	'collation' => 'utf8_unicode_ci',
-		// 	'prefix'    => '',
-		// ),
-
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => isset($_SERVER['DB1_HOST']) ? $_SERVER['DB1_HOST'] : 'sql307.byethost15.com',
-			'database'  => isset($_SERVER['DB1_NAME']) ? $_SERVER['DB1_NAME'] : 'b15_14489163_kaleyo',
-			'username'  => isset($_SERVER['DB1_USER']) ? $_SERVER['DB1_USER'] : 'b15_14489163',
-			'password'  => isset($_SERVER['DB1_PASS']) ? $_SERVER['DB1_PASS'] : 'arnans',
+			'host'      => isset($_SERVER['DB1_HOST']) ? $_SERVER['DB1_HOST'] : 'localhost',
+			'database'  => isset($_SERVER['DB1_NAME']) ? $_SERVER['DB1_NAME'] : 'kaleyo',
+			'username'  => isset($_SERVER['DB1_USER']) ? $_SERVER['DB1_USER'] : 'root',
+			'password'  => isset($_SERVER['DB1_PASS']) ? $_SERVER['DB1_PASS'] : 'root',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
 		),
+
+		// 'mysql' => array(
+		// 	'driver'    => 'mysql',
+		// 	'host'      => isset($_SERVER['DB1_HOST']) ? $_SERVER['DB1_HOST'] : 'sql307.byethost15.com',
+		// 	'database'  => isset($_SERVER['DB1_NAME']) ? $_SERVER['DB1_NAME'] : 'b15_14489163_kaleyo',
+		// 	'username'  => isset($_SERVER['DB1_USER']) ? $_SERVER['DB1_USER'] : 'b15_14489163',
+		// 	'password'  => isset($_SERVER['DB1_PASS']) ? $_SERVER['DB1_PASS'] : 'arnans',
+		// 	'charset'   => 'utf8',
+		// 	'collation' => 'utf8_unicode_ci',
+		// 	'prefix'    => '',
+		// ),
 		
 		'pgsql' => array(
 			'driver'   => 'pgsql',
