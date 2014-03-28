@@ -14,21 +14,21 @@
 $app = new \Slim\Slim(require_once ROOT . '/app/config/app.php');
 $app->setName('RedSlim');
 
-$app->hook('slim.after.router', function () use ($app) {
-    $request = $app->request;
-    $response = $app->response;
-    $params_get = ($request->get());
-    $params_post = ($request->post());
+// $app->hook('slim.after.router', function () use ($app) {
+//     $request = $app->request;
+//     $response = $app->response;
+//     $params_get = ($request->get());
+//     $params_post = ($request->post());
 
-    $app->log->debug('Request path: ' . $request->getPathInfo());
-    $app->log->debug('==============================');
-    $app->log->debug('Params GET: ' . $params_get);
-    $app->log->debug('==============================');
-    $app->log->debug('Params POST: ' . $params_post['orders']);
-    $app->log->debug('==============================');
-    $app->log->debug('Response status: ' . $response->getStatus());
-    // And so on ...
-});
+//     $app->log->debug('Request path: ' . $request->getPathInfo());
+//     $app->log->debug('==============================');
+//     $app->log->debug('Params GET: ' . $params_get);
+//     $app->log->debug('==============================');
+//     $app->log->debug('Params POST: ' . $params_post['orders']);
+//     $app->log->debug('==============================');
+//     $app->log->debug('Response status: ' . $response->getStatus());
+//     // And so on ...
+// });
 
 
 // For native PHP session
