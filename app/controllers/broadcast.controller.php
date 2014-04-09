@@ -1,4 +1,12 @@
 <?php
+
+$app->get('/', function () use($app){
+    $output = array("status" => 404, "message" => "ups, looks like you got lost in this way, contact ev.kristian@gmail.com for more info");
+    header("Content-Type: application/json");
+    echo json_encode($output);
+});
+
+
 $app->get('/broadcasts', function () use($app){
     try {
         $result = R::getRow("
